@@ -1,0 +1,77 @@
+.why2-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.why2-title-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.why2-page .bear{
+   width: 42px;
+   height: 40px; 
+}
+.why2-question{
+    margin-top: 40px;
+    background-color: white;
+    border: solid 1px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 242px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 40px;
+}
+.why2-sub-question{
+ font-size: 12px;
+ color: #9A9283;   
+}
+
+.why2-card-row{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.why2-card{
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: solid 4px #614027;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #f6e9db 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.why2-card-title{
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+}
+.why2-card-icon{
+    width:60px;
+    height:60px;
+}
+.why2-card-row + .why2-card-row{
+    margin-top: 8px;
+}
+.why2-btn{
+    margin-top: 40px;
+     width: 280px;
+     height: 54px;
+     border: solid 1px black;
+     border-radius: 12px;
+     background-color: #C0E6E2;
+}

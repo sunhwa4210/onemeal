@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "LocusSangsang";
+  src: url("./asset/locus_sangsang.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --app-font: "LocusSangsang", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+}
+
+/* 모바일 웹앱 기본 세팅 */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F8C75F;
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+    font-family: var(--app-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+/* 실제 콘텐츠 영역 */
+#root > div {
+  width: 100%;
+  min-width: 360px;
+  max-width: 430px; /* 모바일 기준 폭 제한 (ex. iPhone 14 Pro) */
+  min-height: 100vh;
+  background-color: #F8C75F;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* 살짝 그림자 (웹뷰 느낌) */
+  padding-top: 76px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}

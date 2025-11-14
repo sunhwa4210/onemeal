@@ -1,0 +1,46 @@
+.intro-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.bear{
+   width: 42px;
+   height: 40px; 
+}
+.question{
+    margin-top: 40px;
+    background-color: white;
+    border: solid 1px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 242px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone{
+    margin-top: 24px;
+}
+
+.btn{
+    margin-top: 24px;
+     width: 280px;
+     height: 54px;
+     border: solid 1px black;
+     border-radius: 12px;
+     background-color: #C0E6E2;
+}
