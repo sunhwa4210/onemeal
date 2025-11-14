@@ -45,4 +45,7 @@
      background-color: #C0E6E2;
      color: #000;
      text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
 }
