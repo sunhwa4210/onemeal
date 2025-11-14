@@ -26,14 +26,21 @@ html, body, #root {
 
 /* 실제 콘텐츠 영역 */
 #root > div {
-  width: 100%;
-  min-width: 360px;
-  max-width: 430px; /* 모바일 기준 폭 제한 (ex. iPhone 14 Pro) */
+  width: min(100%, 430px); /* 기기 폭보다 넓어지지 않도록 제한 */
   min-height: 100vh;
   background-color: #F8C75F;
   box-shadow: 0 0 10px rgba(0,0,0,0.05); /* 살짝 그림자 (웹뷰 느낌) */
-  padding-top: 76px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
+  margin: 0 auto;
+  padding-top: clamp(56px, 10vh, 76px);
+  padding-left: clamp(12px, 4vw, 20px);
+  padding-right: clamp(12px, 4vw, 20px);
+  padding-bottom: clamp(20px, 5vh, 32px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 360px) {
+  #root > div {
+    padding-left: clamp(8px, 3vw, 12px);
+    padding-right: clamp(8px, 3vw, 12px);
+  }
 }
