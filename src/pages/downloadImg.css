@@ -31,7 +31,6 @@
   transform: translateY(35px);
   padding: 0 24px;
   text-align: center;
-  font-size: 18px;
   line-height: 1.4;
   color: #4a2c16;
   pointer-events: none;
@@ -41,6 +40,12 @@
 
 .download-img-message.is-hidden {
   opacity: 0;
+}
+
+.download-img-message span {
+  white-space: nowrap;
+  display: block;
+  font-size: clamp(14px, 4vw, 18px);
 }
 
 .download-btn {

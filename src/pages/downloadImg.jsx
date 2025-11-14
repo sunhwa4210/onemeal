@@ -72,10 +72,7 @@ export default function DownloadImg() {
         />
         <div className={`download-img-message ${isImageLoaded ? 'is-visible' : 'is-hidden'}`}>
           {message.split('\n').map((line, idx) => (
-            <span key={idx}>
-              {line}
-              <br />
-            </span>
+            <span key={idx}>{line}</span>
           ))}
         </div>
       </div>
