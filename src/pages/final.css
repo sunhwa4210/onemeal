@@ -84,6 +84,9 @@
      background-color: #C0E6E2;
      color: #000;
      text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
 }
 
 .btn2{
@@ -93,4 +96,9 @@
      border: solid 1px black;
      border-radius: 12px;
      background-color: #CCE6C0;
+     color: #000;
+     text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
 }
