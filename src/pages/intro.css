@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+     padding-top:24px ;
+    padding-bottom:24px ;
 }
 .title-section{
     display: flex;
@@ -48,5 +50,5 @@
      display: inline-flex;
      align-items: center;
      justify-content: center;
-       margin-bottom: 24px;
+
 }
