@@ -35,6 +35,12 @@
   line-height: 1.4;
   color: #4a2c16;
   pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.download-img-message.is-hidden {
+  opacity: 0;
 }
 
 .download-btn {

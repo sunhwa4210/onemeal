@@ -21,6 +21,7 @@ export default function DownloadImg() {
     () => fortunes[Math.floor(Math.random() * fortunes.length)],
   )
   const imgRef = useRef(null)
+  const [isImageLoaded, setIsImageLoaded] = useState(false)
 
   const handleDownload = useCallback(() => {
     const imgEl = imgRef.current
@@ -67,8 +68,9 @@ export default function DownloadImg() {
           src={downloadImg}
           alt="행운 카드"
           ref={imgRef}
+          onLoad={() => setIsImageLoaded(true)}
         />
-        <div className="download-img-message">
+        <div className={`download-img-message ${isImageLoaded ? 'is-visible' : 'is-hidden'}`}>
           {message.split('\n').map((line, idx) => (
             <span key={idx}>
               {line}
