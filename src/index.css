@@ -10,6 +10,13 @@
   --app-font: "LocusSangsang", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
 }
 
+button,
+.btn,
+.btn2,
+.download-btn {
+  font-family: var(--app-font);
+}
+
 /* 모바일 웹앱 기본 세팅 */
 html, body, #root {
   height: 100%;
