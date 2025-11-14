@@ -4,14 +4,12 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .title-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 1px;
 }
 
 .bear{
