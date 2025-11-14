@@ -29,7 +29,6 @@ html, body, #root {
   width: min(100%, 430px); /* 기기 폭보다 넓어지지 않도록 제한 */
   min-height: 100vh;
   background-color: #F8C75F;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* 살짝 그림자 (웹뷰 느낌) */
   margin: 0 auto;
   padding-top: clamp(56px, 10vh, 76px);
   padding-left: clamp(12px, 4vw, 20px);
