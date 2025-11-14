@@ -1,28 +1,30 @@
-.intro-wrapper{
+.intro-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.title-section{
+.intro-page .title-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1px;
+    gap: 16px;
 }
 
-.bear{
+.intro-page .bear{
    width: 42px;
    height: 40px; 
 }
-.question{
-    margin-top: 12px;
+.intro-page .question{
+    margin-top: 20px;
     background-color: white;
     border: solid 1px black;
     padding-left: 20px;
     padding-right: 20px;
-    width: 176px;
+    width: 242px;
     min-height: 54px;
     display: flex;
     align-items: center;
@@ -32,11 +34,11 @@
     margin-right: auto;
 }
 
-.phone{
-    margin-top: 16px;
+.intro-page .phone{
+    margin-top: 24px;
 }
 
-.btn{
+.intro-page .btn{
     margin-top: 24px;
      width: 280px;
      min-height: 54px;
@@ -48,5 +50,6 @@
      display: inline-flex;
      align-items: center;
      justify-content: center;
+     margin-bottom: 24px;
 
 }

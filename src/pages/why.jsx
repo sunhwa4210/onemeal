@@ -11,7 +11,7 @@ export default function Why() {
         navigate('/why2')
       }
   return (
-    <div className="intro-wrapper">
+    <div className="intro-wrapper intro-page">
       <div className="title-section">
         <div><img className="bear" src={bearImg} alt="곰돌이" /></div>
         <div>한 끼의 차이, 행운의 식탁<br></br>
