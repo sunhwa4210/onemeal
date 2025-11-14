@@ -39,7 +39,7 @@
 .btn{
     margin-top: 24px;
      width: 280px;
-     height: 54px;
+     min-height: 54px;
      border: solid 1px black;
      border-radius: 12px;
      background-color: #C0E6E2;
@@ -48,4 +48,5 @@
      display: inline-flex;
      align-items: center;
      justify-content: center;
+      margin-bottom: 24px;
 }
