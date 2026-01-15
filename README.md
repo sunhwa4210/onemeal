@@ -1,16 +1,63 @@
-# React + Vite
+# OneMeal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NFC 태그로 시작되는 한 끼의 연결, 식량 위기 아동을 위한 기부 캠페인 웹앱**
 
-Currently, two official plugins are available:
+- 배포 링크: https://onemeal-hazel.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 1) 프로젝트 개요
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**OneMeal**은 NFC 카드 태그를 통해 즉시 연결되는 **기부 캠페인 전용 웹앱**입니다.  
+사용자는 별도의 앱 설치 없이 NFC 태그 한 번으로 캠페인 메시지를 확인하고,  
+‘한 끼의 연결’이라는 의미를 직관적으로 경험할 수 있도록 설계했습니다.
 
-## Expanding the ESLint configuration
+> **핵심 흐름**  
+> NFC 태그 → 웹앱 진입 → 캠페인 메시지 확인 → 기부 행동으로 연결(확장 가능)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 2) 배경 & 문제 정의
+
+### 문제 상황
+- 기부 캠페인은 참여 의지는 있어도 **진입 장벽**이 높아 이탈이 발생
+  - 앱 설치/회원가입/복잡한 단계
+- 오프라인 캠페인(NFC 카드/굿즈 등)과 온라인 경험이 **자연스럽게 연결되지 않음**
+
+### 해결 방향
+- **NFC 태그 한 번으로 바로 열리는 웹앱**
+- 기능을 늘리기보다 **메시지 전달과 즉시성**을 우선
+- “기부 페이지”가 아니라 **캠페인 경험 페이지**로 구성
+
+
+## 3) 주요 기능
+
+- **NFC 태그 기반 접근(= URL 진입) 최적화**
+- 캠페인 메시지 중심의 단일 흐름 UI
+- **모바일 퍼스트** 레이아웃 (NFC 사용 환경 고려)
+- 빠른 초기 렌더링, 불필요한 입력 최소화
+
+
+## 4) 기술 스택
+
+| 구분 | 기술 |
+| --- | --- |
+| Framework | React |
+| Language | JavaScript |
+| Styling | CSS |
+| Deployment | Vercel |
+
+
+## 5) 구현 포인트 
+
+### 1) NFC 진입 시나리오를 고려한 “첫 화면” 설계
+- NFC 태그는 결국 **URL로 바로 진입**
+- 첫 화면에서 사용자가 “왜 이 페이지에 왔는지”를 즉시 이해하도록  
+  메시지/레이아웃을 단순화
+
+### 2) 캠페인 목적에 맞는 UX 우선순위
+- 복잡한 기능보다 **의미 전달(스토리) → 행동 유도** 흐름에 집중
+- 클릭 수를 줄이고, 스크롤 흐름으로 자연스럽게 읽히도록 구성
+
+### 3) 모바일 환경 최적화
+- NFC 사용은 대부분 모바일에서 발생
+- 작은 화면에서 텍스트 가독성, 버튼 터치 영역, 여백 설계를 우선
+
+
